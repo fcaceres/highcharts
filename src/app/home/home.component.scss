@@ -10,15 +10,20 @@ mat-button-toggle b {
     font-size:120%;
 }
 mat-button-toggle small {
-    color: $blue;
-    font-size:100%;
+    color: #3F51B5;
+    font-size: 100%;
     margin-left: 15px;
+    float: left;
+    
+    
 }
 
 mat-button-toggle p {
     font-style: italic;
     font-size:100%;
     margin: 0px;
+    float: left;
+    clear: both;
 }
 mat-button-toggle-group {
     display: flex;
