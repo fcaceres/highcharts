@@ -3,8 +3,8 @@
 
         <mat-button-toggle-group name="fontStyle" aria-label="Font Style" vertical>
                 <mat-button-toggle (click)="use('APPL')" ><b>Market Summary ></b> <small>Apple Inc. </small><p>NASDAQ: AAPL</p> </mat-button-toggle>
-                <mat-button-toggle (click)="use('GOOG')" ><b>Market Summary ></b> Apple Inc. <br>NASDAQ: AAPL </mat-button-toggle>
-                <mat-button-toggle (click)="use('FB')"><b>Market Summary ></b> Apple Inc. <br>NASDAQ: AAPL </mat-button-toggle>
+                <mat-button-toggle (click)="use('GOOG')" ><b>Market Summary ></b> <small>Alphabet Inc Class C. </small><p>NASDAQ: GOOG</p> </mat-button-toggle>
+                <mat-button-toggle (click)="use('FB')" ><b>Market Summary ></b> <small>Facebook, Inc. Common Stock </small><p>NASDAQ: FB</p> </mat-button-toggle>
               </mat-button-toggle-group>
         <!-- <mat-nav-list>
 
@@ -20,4 +20,8 @@
 <mat-card class="rentalcard"><mat-card-content><div [chart]="GOOG"></div></mat-card-content></mat-card>
 </div><div *ngIf="stockx == 'FB'">
 <mat-card class="rentalcard"><mat-card-content><div [chart]="FB"></div></mat-card-content></mat-card>
-</div></div>
+</div>
+
+
+
+</div>

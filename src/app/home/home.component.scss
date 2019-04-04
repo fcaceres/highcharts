@@ -20,6 +20,23 @@ mat-button-toggle p {
     font-size:100%;
     margin: 0px;
 }
+mat-button-toggle-group {
+    display: flex;
+}
+mat-button-toggle {
+    justify-content: flex-start;
+}
+
+mat-button-toggle[_ngcontent-c8] b[_ngcontent-c8] {
+    color: #3F51B5;
+    font-size: 120%;
+    text-align: right;
+    float: left;
+}
+.mat-button-toggle-label-content>* {
+    vertical-align: middle;
+    text-align: left !important;
+}
 .mat-button-toggle-label-content {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -49,6 +66,7 @@ mat-button-toggle p {
 }
 mat-card.rentalcard {
 margin: 10px 10px 10px 10px;
+max-width: 400px;
 }
 
 
