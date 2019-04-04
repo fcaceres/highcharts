@@ -5,8 +5,8 @@
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-        <a mat-list-item  routerLink="/info" routerLinkActive="active">Home</a>
-        <a mat-list-item  routerLink="/home" routerLinkActive="active">Favorites</a>
+        <a mat-list-item  routerLink="/home" routerLinkActive="active">Home</a>
+        <a mat-list-item  routerLink="/info" routerLinkActive="active">Favorites</a>
   
     </mat-nav-list>
   </mat-sidenav>
@@ -26,8 +26,8 @@
       <div class="menusize">
       <span class="topmenu" *ngIf="!(isHandset$ | async)">
           <nav [ngClass] = "'topmenu'">
-          <a mat-list-item  routerLink="/info" routerLinkActive="active">Home</a>
-          <a mat-list-item  routerLink="/home" routerLinkActive="active">Favorites</a>
+          <a mat-list-item  routerLink="/home" routerLinkActive="active">Home</a>
+          <a mat-list-item  routerLink="/info" routerLinkActive="active">Favorites</a>
         </nav>
       </span>
     </div>

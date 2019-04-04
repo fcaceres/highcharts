@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+over;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.XSmall)
     .pipe(
       map(result => result.matches)
