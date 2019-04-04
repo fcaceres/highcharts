@@ -1,0 +1,41 @@
+@import "src/styles.scss";
+
+.headertop{
+  display: flex;
+  margin: 0px auto 0px auto;
+  width: 90%;
+}
+.topmenu{
+  display: flex;
+  justify-content: space-between;
+}
+.menusize {
+  margin: 0px auto 0px auto;
+  width: 90%;
+}
+.headertopcenter{
+  display:flex;
+  justify-content: center;
+}
+li.nav-link{
+
+  line-height: 10px;
+
+}
+.active {
+  background: #212B5F;
+}
+.mat-list-item {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: white;
+  text-decoration: none;
+  line-height: 22px;
+}
+
+.logosize {
+  margin: 40px 0px 0px 0px;
+
+}
+.logo {
+width: 200px;
+}

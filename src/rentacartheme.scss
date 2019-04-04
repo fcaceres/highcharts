@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$rentacar-primary: mat-palette($mat-indigo,500,A100,50);
+$rentacar-accent: mat-palette($mat-indigo, A200, A100, A400);
+$rentacar-warn: mat-palette($mat-red);
+
+
+$rentacar-theme: mat-light-theme($rentacar-primary, $rentacar-accent, $rentacar-warn);
+// @include angular-material-theme($rentacar-theme);
+
+.rctheme {
+    @include angular-material-theme($rentacar-theme);
+}

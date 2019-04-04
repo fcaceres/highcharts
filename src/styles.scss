@@ -1,1 +1,161 @@
-/* You can add global styles to this file, and also import other style files */
+@import "src/rentacartheme.scss";
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+}
+
+a,h1,h2,h3,h4,p, .mat-card-title, .mat-card-subtitle {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button.checkrates{
+    font-size: 20px;
+    background-color: #3F51B5;
+    color: white;
+
+}
+.mat-button-toggle-label-content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    line-height: 30px !important;
+    padding: 0 16px;
+    position: relative;
+}
+
+.custom-autocomplete__dropdown, a {
+    width: 97% !important;
+    color: #353535;
+    float: left;
+    padding: 8px 13px !important;
+}
+
+.custom-autocomplete__dropdown, .heading {
+    padding: 13px 10px 7px 10px !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    position: relative;
+}
+
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 38px;
+    display: flex;
+    justify-content: start;
+}
+
+
+
+.mat-list-item {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: white;
+    text-decoration: none;
+    line-height: 22px;
+    text-align: center;
+    min-width: fit-content;
+}
+
+footer>p{
+    display: flex;
+    flex-direction: column;
+    
+}
+mat-sidenav {
+    width: 250px;
+}
+
+/* for sidenav to take a whole page */
+html{
+    height: 100%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.content{
+    flex: 1 0 auto;
+
+}
+footer{
+    background-color: mat-color($rentacar-primary, 50);
+    height: 70px;
+    min-height: 70px;
+    color: mat-color($rentacar-accent, A400);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.footerline {
+    line-height: 24px;
+    display: flex;
+}
+
+.mat-card-actions{
+    display: flex !important;
+    justify-content: flex-end;
+}
+mat-card.carcard > mat-card-header {
+    background-color: mat-color($rentacar-primary, 50);
+    
+}
+
+
+@media (min-width: 580px){
+    .mat-drawer-backdrop.mat-drawer-shown {
+        visibility: hidden !important;
+    }
+    mat-sidenav {
+        visibility: hidden !important;
+    }
+
+    mat-card.carcard{
+        margin: 30px 30% 30px 30%;
+        padding: 0px;
+    }
+
+    mat-card.carcard > mat-card-header > div > mat-card-subtitle {
+        display: block;
+        margin-bottom: 20px !important;
+        margin-top: 10px !important;
+        font-size: 20px;
+    }
+    mat-card.carcard > img {
+        width: calc(100% + 0px) !important;
+        margin: 0px 0px 0px 0px !important;
+    }
+    mat-card.carcard > mat-card-content {
+        width: calc(100% - 20px) !important;
+        margin: 10px 0px 0px 10px !important;
+    }   
+    mat-card.carcard > mat-card-actions {
+        width: calc(100% - 20px) !important;
+        margin: 10px 0px 10px 10px !important;
+        padding-bottom: 10px !important;
+    }   
+    mat-card.carcard > mat-card-header > div > mat-card-title {
+        font-size: 40px !important;
+        margin-top: 10px;
+    }
+
+  }
+
+  @media (max-width: 580px){
+    mat-card.rentalcard{
+        margin:  0px 0px 5px 0px;
+    } 
+
+  } 
+  
+  .search-default-icon{
+        background-image:url("/assets/baseline_search_black_48dp.png") !important;
+  }

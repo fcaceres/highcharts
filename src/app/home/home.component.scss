@@ -1,0 +1,289 @@
+@import "src/rentacartheme.scss";
+
+$blue: #3F51B5;
+
+.blue {
+    color: $blue;
+}
+mat-button-toggle b {
+    color: $blue;
+    font-size:120%;
+}
+mat-button-toggle small {
+    color: $blue;
+    font-size:100%;
+    margin-left: 15px;
+}
+
+mat-button-toggle p {
+    font-style: italic;
+    font-size:100%;
+    margin: 0px;
+}
+.mat-button-toggle-label-content {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline-block;
+    line-height: 30px !important;
+    padding: 0 16px;
+    position: relative;
+}
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 30px !important;
+    padding: 0 12px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+    margin: auto;
+}
+.buttonarea {
+    margin: 10px 10px 10px 10px;
+    max-height: 700px;
+}
+.demo #search_places {
+    height: 46px;
+    font-size: 24px;
+}
+// .demo{
+//     width: 600px;
+// }
+
+.changeplace #search_places {
+    height: 25px;
+    font-size: 12px;
+  }
+eiirs
+ .changeplace {
+    height: 25px;
+    font-size: 15px;
+ }
+ .rowdir2 > label{
+    font-weight: bold;
+ }
+
+ .datechange {
+    height: 20px;
+    font-size: 12px;
+    text-indent: 13px;
+    border: 1px solid #ccc;
+}
+
+.changeplace2 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 0px 0px;
+}
+.dateentries{
+    height: 45px;
+    width: 100%;
+    font-size: 24px;
+    text-indent: 13px;
+    border: 1px solid #ccc;
+}
+
+.text1 {
+    margin-right: 15px;
+}
+.mat-card-header .mat-card-title {
+    font-size: 30px;
+}
+.mat-card-header-text {
+    margin: 0 10px !important;
+}
+.mat-card-subtitle, .mat-card-content {
+    font-size: 18px;
+}
+div.features{
+    display: flex;
+    flex-direction: column;
+}
+div.row{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    justify-content: space-around;
+}
+
+.mat-card-subtitle.blue {
+    color: $blue;
+    text-align: left;
+}
+
+.destination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin: 20px 4% 20px 4%;
+}
+.mat-flat-button {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 20px !important;
+    font-weight: 500;
+}
+// div.label{
+//     margin-bottom: 20px;
+// }
+
+.label{
+    font-weight: bold;
+}
+
+
+img.valueadded1.mat-card-image {
+    width: calc(9% + 30px) !important;
+    height: calc(9% + 30px) !important;
+    margin: 0 0px 0px 0px !important;
+}
+
+img.carrate1.mat-card-image {
+    width: calc(30% + 30px) !important;
+    height: calc(30% + 30px) !important;
+    margin: 0 0px 0px 0px !important;
+}
+.pricecol{
+    display:flex;
+    width: fit-content;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+.actionscol{
+    display:flex;
+    width: fit-content;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+    
+}
+p.price {
+    vertical-align: top;
+    margin: 0px !important;
+    font-size: 30px;
+}
+p.lowlabel {
+    vertical-align: top;
+    margin: 0px !important;
+}
+
+mat-card-header.valueadded {
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.titlecard{
+    margin: 10px 20% 0px 20% !important;
+}
+
+mat-card.valuecard{
+    margin: 10px 20% 0px 20% !important;
+}
+
+.valuecardtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.leftsided {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.carratetop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ .mat-card-title.ext1 {
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+.mat-card-subtitle.changer {
+margin: 0px;
+}
+.mat-card-subtitle.ext1 {
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+section.vacontent {
+    padding: 0px 10px 0px 10px;
+}
+
+section.crcontent {
+    padding: 0px 10px 0px 10px;
+    width: 50%;
+}
+
+.greencheck {
+    color: green;
+    vertical-align: middle;
+}
+.graysquare {
+    vertical-align: middle;
+}
+div.resp {
+    margin: 0px auto 0px auto;
+    display: flex;
+    justify-content: center;
+}
+.rowdir{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rowdir2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+}
+.changecolor1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+    background-color: #dddddd;
+}
+.changecolor2{
+    color: $blue;
+}
+.rowdir3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+}
+.columndir{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.rowdir3 > .mat-card-subtitle{
+    min-width: fit-content;
+}
+
+.rowdir3 > a.changeres{
+    vertical-align: middle;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+@media (min-width: 580px){
+mat-card.carrate{
+    margin: 10px 20% 0px 20% !important;
+}
+}

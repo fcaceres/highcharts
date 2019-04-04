@@ -1,0 +1,23 @@
+<div class="container">
+<mat-card class="buttonarea">
+
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style" vertical>
+                <mat-button-toggle (click)="use('APPL')" ><b>Market Summary ></b> <small>Apple Inc. </small><p>NASDAQ: AAPL</p> </mat-button-toggle>
+                <mat-button-toggle (click)="use('GOOG')" ><b>Market Summary ></b> Apple Inc. <br>NASDAQ: AAPL </mat-button-toggle>
+                <mat-button-toggle (click)="use('FB')"><b>Market Summary ></b> Apple Inc. <br>NASDAQ: AAPL </mat-button-toggle>
+              </mat-button-toggle-group>
+        <!-- <mat-nav-list>
+
+    <a mat-list-item  (click)="use('APPL')" [ngClass]="{'active':clicked}" routerLink="/home" routerLinkActive="active">APPL</a>
+    <a mat-list-item  (click)="use('GOOG')" [ngClass]="{'active':clicked}" routerLink="/home" routerLinkActive="active">GOOG</a>
+    <a mat-list-item  (click)="use('FB')" [ngClass]="{'active':clicked}" routerLink="/home" routerLinkActive="active">FB</a>
+        </mat-nav-list> -->
+
+</mat-card>
+<div *ngIf="stockx == 'APPL'">
+<mat-card class="rentalcard"><mat-card-content><div [chart]="APPL"></div></mat-card-content></mat-card>
+</div><div *ngIf="stockx == 'GOOG'">
+<mat-card class="rentalcard"><mat-card-content><div [chart]="GOOG"></div></mat-card-content></mat-card>
+</div><div *ngIf="stockx == 'FB'">
+<mat-card class="rentalcard"><mat-card-content><div [chart]="FB"></div></mat-card-content></mat-card>
+</div></div>
