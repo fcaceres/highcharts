@@ -32,7 +32,7 @@
     "ng-pick-datetime": "^7.0.0",
     "ngx-geoautocomplete": "^0.1.1",
     "rxjs": "~6.3.3",
-    "rxjs-compat": "^6.4.0",
+    "rxjs-compat": "6.4.0",
     "zone.js": "~0.8.26",
     "angular-highcharts": "^7.0.1",
     "highcharts": "^6.2.0"
