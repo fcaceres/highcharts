@@ -14,12 +14,76 @@
         </mat-nav-list> -->
 
 </mat-card>
+
 <div *ngIf="stockx == 'APPL'">
 <mat-card class="rentalcard"><mat-card-content><div [chart]="APPL"></div></mat-card-content></mat-card>
 </div><div *ngIf="stockx == 'GOOG'">
 <mat-card class="rentalcard"><mat-card-content><div [chart]="GOOG"></div></mat-card-content></mat-card>
 </div><div *ngIf="stockx == 'FB'">
 <mat-card class="rentalcard"><mat-card-content><div [chart]="FB"></div></mat-card-content></mat-card>
+</div>
+
+
+
+<div *ngIf="stockx == 'APPL'">
+        <div *ngFor="let res of Apple"> 
+              
+        <mat-card class="rentalcard2">   
+<mat-card-content>
+                <mat-card-header>
+                        <div mat-card-avatar class="example-header-image"></div>
+                        <mat-card-title>
+                            {{ res.title}}
+                        </mat-card-title>
+                        <mat-card-subtitle>{{ res.author_name}}</mat-card-subtitle>
+                      </mat-card-header>
+                      <a target="_blank"  href="{{res.url}}"><img  mat-card-image src="{{res.thumbnail}}" alt="{{res.tag}}" onerror="this.style.display='none'"></a>
+                      <mat-card-content>
+                        <p> {{ res.summary}}   </p>
+                      </mat-card-content>
+ </mat-card-content></mat-card>
+</div>
+        </div>
+        <div *ngIf="stockx == 'GOOG'">     
+
+                <div *ngFor="let res of goog"> 
+                        <mat-card class="rentalcard2">   
+                <mat-card-content>
+                                <mat-card-header>
+                                        <div mat-card-avatar class="example-header-image"></div>
+                                        <mat-card-title>
+                                            {{ res.title}}
+                                        </mat-card-title>
+                                        <mat-card-subtitle>{{ res.author_name}}</mat-card-subtitle>
+                                      </mat-card-header>
+                                      <a target="_blank" href="{{res.url}}"><img  mat-card-image src="{{res.thumbnail}}" alt="{{res.tag}}" onerror="this.style.display='none'"></a>
+                                      <mat-card-content>
+                                        <p> {{ res.summary}}   </p>
+                                      </mat-card-content>
+                 </mat-card-content></mat-card>
+                </div>           
+
+
+        </div>
+        
+        <div *ngIf="stockx == 'FB'">
+                <div *ngFor="let res of fb"> 
+                        <mat-card class="rentalcard2">   
+                <mat-card-content>
+                                <mat-card-header>
+                                        <div mat-card-avatar class="example-header-image"></div>
+                                        <mat-card-title>
+                                            {{ res.title}}
+                                        </mat-card-title>
+                                        <mat-card-subtitle>{{ res.author_name}}</mat-card-subtitle>
+                                      </mat-card-header>
+                                      <a target="_blank" href="{{res.url}}"><img  mat-card-image src="{{res.thumbnail}}" alt="{{res.tag}}" onerror="this.style.display='none'"></a>
+                                      <mat-card-content>
+                                        <p> {{ res.summary}}   </p>
+                                      </mat-card-content>
+                 </mat-card-content></mat-card>
+                </div>
+
 </div>
 
 

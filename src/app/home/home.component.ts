@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { StockChart } from 'angular-highcharts';
 import {DataserviceService} from './dataservice.service';
-import { useAnimation } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -20,14 +19,39 @@ export class HomeComponent {
   FB: StockChart;
   data: any = []
   results
+ Apple
+ fb
+ goog
   clicked: boolean = false;
 
   use(a){
     this.clicked = true;
     this.stockx = a
+    this.getAppleNews()
+    this.getGoogNews()
+    this.getFBNews()
     console.log(this.stockx)
     return this.stockx;
   } 
+
+  getAppleNews(){
+    this.dataService.AAPLnews().subscribe(data=>{this.data = data;
+     this.Apple = data['Content']['result']
+    console.log(data['Content'])
+    })
+  }
+  getGoogNews(){
+    this.dataService.GOOGnews().subscribe(data=>{this.data = data;
+     this.goog = data['Content']['result']
+    console.log(data['Content'])
+    })
+  }
+  getFBNews(){
+    this.dataService.fbnews().subscribe(data=>{this.data = data;
+     this.fb = data['Content']['result']
+    console.log(data['Content'])
+    })
+  }
 
   constructor(public dataService: DataserviceService) {
 

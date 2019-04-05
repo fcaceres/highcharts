@@ -74,7 +74,11 @@ mat-card.rentalcard {
 margin: 10px 10px 10px 10px;
 
 }
-
+mat-card.rentalcard2 {
+    margin: 10px 10px 10px 10px;
+    max-width: 550px;
+    max-height: 700px;
+    }
 
 .demo #search_places {
     height: 46px;
