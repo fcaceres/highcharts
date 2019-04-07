@@ -53,6 +53,17 @@ export class HomeComponent {
     })
   }
 
+  decoder(elem){
+    return elem
+    .replace(/&/g, "")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/#39;/g, "'")
+    .replace(/&#39;/g, "'");
+  }
+  
+
   constructor(public dataService: DataserviceService) {
 
 
