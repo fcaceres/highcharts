@@ -1,5 +1,5 @@
 View deployed site :
-http://hsexample.s3-website-us-east-1.amazonaws.com/home
+http://hsexample.s3-website-us-east-1.amazonaws.com
 
 
 # fredcharts
